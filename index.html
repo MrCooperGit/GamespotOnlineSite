@@ -15,6 +15,7 @@
 
   <body>
 	  <div class="container">
+
 <!--Header	  -->
 	     <header>
           <div class="row clearfix">
@@ -23,22 +24,34 @@
     		       <div id="gamespotLogo"><img class="col_4 gamespotLogoH pointer" src="img/GamespotLogo.png" alt="Gamespot Logo"></div>
                <div class="col-2Gaps"></div>
     		       <div id="userLogin"><i class="col-1 fa fa-fw fa-user myIcon pointer"></i></div>
-    			     <div id="shoppingCart"><i class="col-1 fa fa-shopping-cart myIcon pointer"></i></div>
+    			     <div id="shoppingCartBtn"><i class="col-1 fa fa-shopping-cart myIcon pointer"></i></div>
 		      </div>
 
+<!-- Hamburger Overlay menu -->
           <div class="hamburgerOverlay">
               <button id="newsButton" class="redButton" type="button" name="button">News</button>
               <button id="reviewsButton" class="redButton" type="button" name="button">Reviews</button>
               <button id="shopButton" class="redButton" type="button" name="button">Shop</button>
           </div>
+
+<!-- Shopping Cart Overlay menu -->
+       <div class="float-right">
+          <div id="shoppingCartOverlay" class="shoppingCartOverlay row clearfix">
+              <h2 style="color: #FB0000">Shopping Cart</h2>
+              <div id="cart"></div>
+              <div class="">
+                  <button class="checkoutBtn shopText" type="button" name="button">Checkout</button>
+              </div>
+          </div>
+      </div>
 	    </header>
 
-
+<!-- Home Section -->
       <main id="homeSection">
       	<section> <!--Articles-->
           <div class="row clearfix">
             <div class="banner">
-              <a id="#"><img class="banner pointer" src="img/EldenRingIncluding.png" alt="Elden ring game image"></a>
+              <a><img class="banner" src="img/EldenRingIncluding.png" alt="Elden ring game image"></a>
             </div>
             <div class="row clearfix">
               <div class="col-1"></div>
@@ -69,7 +82,8 @@
           </div>
         </section>
 
-        <section> <!--Browse Buttons-->
+<!--Browse Buttons-->
+        <section>
           <h2 style="color: black;">Browse</h2>
           <div>
             <a id="newsButton"><img class="newsButt pointer" src="img/newsButton.png" alt="Button link to News"></a>
@@ -78,7 +92,8 @@
           </div>
         </section>
 
-        <section> <!--Top Trending list-->
+<!--Top Trending list-->
+        <section>
           <h2 style="color: #FB0000;">Top Trending</h2>
           <div class="topTrending">
             <ol>
@@ -97,7 +112,7 @@
         </section>
       </main>
 
-
+<!-- News Section -->
       <main id="newsSection">
         <section>
           <div class="row clearfix">
@@ -134,7 +149,7 @@
         </section>
       </main>
 
-
+<!-- Reviews Section -->
       <main id="reviewsSection">
         <section>
           <div class="row clearfix">
@@ -171,7 +186,7 @@
         </section>
       </main>
 
-
+<!-- Overwatch Article -->
       <main id="overwatch2Article">
         <section>
           <div class="row clearfix">
@@ -202,7 +217,7 @@
         </section>
       </main>
 
-
+<!-- Shop Section -->
       <main id="shopSection">
         <section>
             <div class="row clearfix">
@@ -274,33 +289,79 @@
       </main>
 
 <!-- Shopping cart -->
-          <div class="shoppingCartMenu row clearfix">
+          <div id="shoppingCart" class="shoppingCartMenu row clearfix">
               <h2 style="color: #FB0000">Shopping Cart</h2>
-              <div id="cart"></div>
+              <div id="cart1"></div>
               <div class="">
-                  <button class="checkoutBt shopText" type="button" name="button">Checkout</button>
+                  <button class="checkoutBtn shopText" type="button" name="button">Checkout</button>
               </div>
           </div>
 
+<!-- Signin Form -->
+      <div id="myAccount">
+          <div class="accContainer">
+              <h2>My Account</h2>
+              <form class="" action="index.html" method="post">
+                  <div class="inputContainer">
+                      <label for="email">Email Address:</label><br>
+                      <input type="email" id="email" name="email" size="50" class="inputBox">
+                  </div>
+                  <div class="inputContainer">
+                      <label for="password">Password:</label><br>
+                      <input type="password" id="password" name="password" size="20" class="inputBox">
+                  </div>
+                  <div class="inputContainer">
+                      <input type="submit" name="submit" class="submitBtn">
+                  </div>
+              </form>
+          </div>
+<!-- Sign up Form       -->
+          <div class="accContainer">
+              <h2>Sign Up</h2>
+              <form class="" action="index.html" method="post">
+                    <div class="inputContainer">
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="fname" size="20" class="inputBox">
+                    </div>
+                    <div class="inputContainer">
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="lname" size="20" class="inputBox">
+                    </div>
+                    <div class="inputContainer">
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" size="50" class="inputBox">
+                    </div>
+                    <div class="inputContainer">
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" size="20" class="inputBox">
+                    </div>
+                    <div class="inputContainer">
+                        <input type="submit" name="submit" class="submitBtn">
+                    </div>
+              </form>
+          </div>
+      </div>
 
+
+<!-- Footer -->
       <footer>
         <div>
           <div class="footerHeadings row clearfix">
-            <div id="newsButtonF" class="col-1 pointer">News</div>
+            <div id="newsButton" class="col-1 pointer">News</div>
             <div class="col-3Gaps"></div>
-            <div id="reviewsButtonF" class="col-1 pointer">Reviews</div>
+            <div id="reviewsButton" class="col-1 pointer">Reviews</div>
             <div class="col-3Gaps"></div>
-            <div id="shopButtonF" class="col-1 pointer">Shop</div>
+            <div id="shopButton" class="col-1 pointer">Shop</div>
             <div class="col-3Gaps"></div>
             <div class="col-1">Social</div>
           </div>
           <div class="row clearfix">
-            <div id="#" class="col-2 footertext1 pointer">Overwatch 2</div>
+            <div id="overwatch2Banner" class="col-2 footertext1 pointer">Overwatch 2</div>
             <div class="col-9"></div>
             <div class="col_1"><img class="facebook" src="img/facebookIcon.png" alt="Facebook Icon"></div>
           </div>
           <div class="row clearfix">
-            <div id="#" class="col_3"><img class="gamespotLogoF pointer" src="img/GamespotLogo.png" alt="Gamespot Logo"></div>
+            <div id="gamespotLogo" class="col_3"><img class="gamespotLogoF pointer" src="img/GamespotLogo.png" alt="Gamespot Logo"></div>
             <div class="col-8"></div>
             <div class="col_1"><img class="instagram" src="img/instagramIcon.png" alt="Instagram Icon"></div>
           </div>
