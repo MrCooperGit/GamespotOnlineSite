@@ -34,6 +34,10 @@ p{
 	letter-spacing: 0em;
 	text-align: left;
 }
+.container{
+	width: 95%;
+	margin: auto;
+}
 .gamespotLogoH{
 	width: 60%;
 	height: auto;
@@ -54,15 +58,6 @@ p{
 }
 .row{
 	width: 100%;
-}
-.col3{
-	width: 30%;
-	float:left;
-	margin-left: 2.5%;
-}
-.container{
-	width: 95%;
-	margin: auto;
 }
 .cta{
 	text-align: right;
@@ -232,10 +227,7 @@ p{
 	display: block;
 	margin: auto;
 	font-size: 1vw;
-	/* margin-top: .5% auto; */
 	width: 60%;
-	/* width: 16.66%; */
-	/* object-position: center; */
 }
 button.addToCart{
 	margin-bottom: 2%;
@@ -267,20 +259,14 @@ button.addToCart{
 }
 .hamburgerOverlay {
   position: absolute;
+	border: 1px solid black;
 	border-radius: 10px;
   width: 20%;
   height: auto;
   z-index: 1;
 	background-color: white;
 }
-.hamburgerOverlay {
-  position: absolute;
-	border-radius: 10px;
-  width: 40%;
-  height: auto;
-  z-index: 2;
-	background-color: white;
-}
+
 .box{
 	border: 1px solid black;
 	width: 50%;
@@ -294,7 +280,23 @@ button.addToCart{
 	margin: 2% auto;
 	padding-bottom: 2%;
 }
-.checkoutBt{
+.shoppingCartOverlay {
+  position: absolute;
+	box-sizing: border-box;
+	width: 30%;
+	border: 2px solid black;
+	border-radius: 20px;
+	margin-top: 0px;
+  z-index: 2;
+	background-color: white;
+	padding-bottom: .5%;
+}
+.float-right{
+	float: right;
+	width: 30%;
+	margin-right: 25px;
+}
+.checkoutBtn{
 	width: 50%;
 	float: right;
 	margin-right: 1.5%;
@@ -302,4 +304,82 @@ button.addToCart{
 	border-bottom-right-radius: 10px;
 	background-color: #FB0000;
 	color: white;
+}
+.inputBox{
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.inputContainer{
+	margin: 2%;
+	font-family: Roboto;
+	font-size: 2vw;
+	font-weight: 800;
+	line-height: 100%;
+}
+.accContainer{
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+.submitBtn{
+	border: 1px solid black;
+	border-radius: 5px;
+	color: white;
+	/* padding: 8% 10%; */
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-family: Roboto;
+	font-size: 2vw;
+	font-weight: 800;
+	line-height: 100%;
+	/* margin: 5%; */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color: #FB0000;
+	color: white;
+	width: 30%;
+	margin: auto;
+}
+
+
+
+
+/* Breakpoints */
+@media only screen and (max-width: 1439px) {
+	.float-right{
+		margin-right: 20px;
+	}
+	.shoppingCartMenu{
+		border-radius: 15px
+	}
+	.shoppingCartOverlay{
+		border-radius: 15px
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.float-right{
+		margin-right: 15px;
+	}
+	.shoppingCartMenu{
+		border: .5px solid black;
+		border-radius: 10px
+	}
+	.shoppingCartOverlay{
+		border: .5px solid black;
+		border-radius: 10px
+	}
+}
+@media only screen and (max-width: 767px) {
+	.float-right{
+		margin-right: 10px;
+	}
+	.shoppingCartMenu{
+		border: .1px solid black;
+		border-radius: 5px
+	}
+	.shoppingCartOverlay{
+		border: .1px solid black;
+		border-radius: 5px
+	}
 }
